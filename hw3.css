@@ -1,0 +1,159 @@
+/*
+Name: Jason Le
+Date Created: Feb 9th, 2025
+Last Edited: Apr 13th, 2025
+Version: 3.0
+Description: Homework 3 CSS Stylesheet
+*/
+
+/* Page Basics */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: darkgoldenrod;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    width: 100%;
+    background-color: rgb(255, 165, 0);
+    padding: 10px;
+}
+
+header h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 28px;
+}
+
+/* Table Title */
+th {
+    background-color: #fff8dc;
+    color: #000;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Form Table */
+form table {
+    background-color: white;
+    border-collapse: collapse;
+    width: 90%;
+    max-width: 800px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Range Slider Label */
+#range-slider {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Error Styling */
+.error {
+    color: red;
+    font-size: 13px;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    margin: 10px 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: darkorange;
+}
+
+/* Review Table */
+#showInput {
+    margin-top: 20px;
+}
+
+.output {
+    border: 2px solid #333;
+    background-color: #fff;
+    width: 90%;
+    max-width: 700px;
+    margin: 10px auto;
+    border-radius: 6px;
+    text-align: left;
+    box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+.output td {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Alert Box */
+#alert-box {
+    display: none;
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    background-color: white;
+    border: 2px solid #f00;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+    z-index: 9999;
+    text-align: center;
+}
+
+#alert-content h4 {
+    margin: 0 0 10px 0;
+    color: red;
+}
+
+#close-alert {
+    background-color: red;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
